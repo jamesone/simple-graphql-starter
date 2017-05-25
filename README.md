@@ -30,3 +30,8 @@ Contains:
 ### Notes
 
 I will be updating this shortly
+
+### TODO
+
+- Document
+- Add more stuff to starter kit
