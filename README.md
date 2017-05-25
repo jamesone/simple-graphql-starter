@@ -20,6 +20,7 @@ Contains:
 
 - yarn update-schema (update the graphql schema when you make a change)
 - yarn build (build for production) && yarn start
+- knex migrate:make NAME_OF_MIGRATION - Create a migration
 
 # Structure
 
