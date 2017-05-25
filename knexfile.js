@@ -14,10 +14,10 @@ module.exports = {
       max: 10
     },
     migrations: {
-      directory: `../db/migrations`
+      directory: `${__dirname}/db/migrations`
     },
     seeds: {
-      directory: `../db/seeds/testing`
+      directory: `${__dirname}/db/seeds/testing`
     }
   },
   testing: {
@@ -35,10 +35,10 @@ module.exports = {
       max: 10
     },
     migrations: {
-      directory: `../db/migrations`
+      directory: `${__dirname}/db/migrations`
     },
     seeds: {
-      directory: `../db/seeds/testing`
+      directory: `${__dirname}/db/seeds/testing`
     }
   },
   staging: {
@@ -56,10 +56,10 @@ module.exports = {
       max: 10
     },
     migrations: {
-      directory: `../db/migrations`
+      directory: `${__dirname}/db/migrations`
     },
     seeds: {
-      directory: `../db/seeds/staging`
+      directory: `${__dirname}/db/seeds/staging`
     }
   },
   production: {
@@ -77,10 +77,10 @@ module.exports = {
       max: 10
     },
     migrations: {
-      directory: `../db/migrations`
+      directory: `${__dirname}/db/migrations`
     },
     seeds: {
-      directory: `../db/seeds/production`
+      directory: `${__dirname}/db/seeds/production`
     }
   }
 };
