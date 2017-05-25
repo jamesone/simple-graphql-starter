@@ -1,0 +1,12 @@
+schema {
+  query: QueryType
+  mutation: MutationType
+}
+
+type MutationType {
+  count: Int
+}
+
+type QueryType {
+  count: Int
+}
