@@ -5,8 +5,8 @@ const MutationType = new GraphQLObjectType({
   fields: () => ({
     count: {
       type: GraphQLInt,
-      resolve: function() {
-        return 0;
+      resolve: () => {
+        return 1;
       }
     }
   })
