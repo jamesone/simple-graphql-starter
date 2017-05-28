@@ -15,6 +15,29 @@
           "description": null,
           "fields": [
             {
+              "name": "viewer",
+              "description": "Viewer query",
+              "args": [],
+              "type": {
+                "kind": "OBJECT",
+                "name": "ViewerType",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ViewerType",
+          "description": null,
+          "fields": [
+            {
               "name": "count",
               "description": null,
               "args": [],

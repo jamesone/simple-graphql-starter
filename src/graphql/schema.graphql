@@ -8,5 +8,10 @@ type MutationType {
 }
 
 type QueryType {
+  # Viewer query
+  viewer: ViewerType
+}
+
+type ViewerType {
   count: Int
 }

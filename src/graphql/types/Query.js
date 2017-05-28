@@ -12,12 +12,21 @@ import ViewerQuery from '../queries/Viewer';
 const QueryType = new GraphQLObjectType({
   name: 'QueryType',
   fields: () => ({
-    count: {
-      type: GraphQLInt,
-      resolve: function() {
-        return 0;
-      }
-    }
+  	viewer: ViewerQuery
+  	// viewer: {
+	 		// count: {
+	   //    type: GraphQLInt,
+	   //    resolve: function() {
+		  //       return 0;
+	   //    }
+	   //  }
+  	// }
+    // count: {
+    //   type: GraphQLInt,
+    //   resolve: function() {
+    //     return 0;
+    //   }
+    // }
   }),
 });
 

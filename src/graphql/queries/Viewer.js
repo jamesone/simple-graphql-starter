@@ -1,17 +1,17 @@
-import { GraphQLObjectType, GraphQLString } from 'graphql';
+import { GraphQLInt, GraphQLString } from 'graphql';
 
-const ViewerType = new GraphQLObjectType({
-  name: 'ViewerType',
-  description: 'A viewer object',
-  fields: () => ({
-    random: {
-      description: 'Get current activity or default [0] one',
-      type: GraphQLString,
-      resolve: async (root, args, { rootValue }) => {
-        return "LOL"
-      }
-    }
-  })
-});
+import ViewerType from '../types/Viewer';
 
-export default ViewerType;
+const ViewerQuery = {
+  description: 'Viewer query',
+  type: ViewerType,
+  resolve: async (root, args, { rootValue }) => {
+    const accessToken = rootValue.request.accessToken;
+
+    return {
+      accessToken,
+    };
+  }
+};
+
+export default ViewerQuery;
